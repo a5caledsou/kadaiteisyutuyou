@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Chiyoko's Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    Chiyoko's Portfolio
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="trivia.html">Trivia</a>
+  </nav>
+
+  <div class="container">
+    <aside class="left">
+      <h3>Useful Links</h3>
+
+      <a
+        href="https://paiza.jp/works/search_courses/1012"
+        target="_blank"
+      >
+        Paiza
+      </a>
+
+      <a
+        href="https://www.fe-siken.com/fekakomon.php"
+        target="_blank"
+      >
+        Kakomon-Dojo
+      </a>
+
+      <a
+        href="https://github.com/"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </aside>
+
+    <main>
+      <h2>Japanese Name Generator</h2>
+
+      <p>
+        Enter your name and answer the questions.
+        We will create a Japanese-style name for you!
+      </p>
+
+      <form id="name-generator-form">
+        <div class="generator-group">
+          <label for="user-name">Your Name</label>
+
+          <input
+            type="text"
+            id="user-name"
+            placeholder="Enter your name"
+            required
+          >
+        </div>
+
+        <div class="generator-group">
+          <label for="season">Favorite Season</label>
+
+          <select id="season" required>
+            <option value="">Select a season</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="autumn">Autumn</option>
+            <option value="winter">Winter</option>
+          </select>
+        </div>
+
+        <div class="generator-group">
+          <label for="personality">Your Personality</label>
+
+          <select id="personality" required>
+            <option value="">Select your personality</option>
+            <option value="kind">Kind</option>
+            <option value="energetic">Energetic</option>
+            <option value="calm">Calm</option>
+            <option value="creative">Creative</option>
+          </select>
+        </div>
+
+        <button type="submit">
+          Create My Japanese Name
+        </button>
+      </form>
+
+      <div id="name-result"></div>
+    </main>
+
+    <aside class="right">
+      <h2>Contact Me</h2>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            minlength="10"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </aside>
+  </div>
+
+  <footer>
+    <p>Created: July 2026</p>
+
+    <a
+      href="https://github.com/chiyoko123"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      GitHub
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
